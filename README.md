@@ -4,16 +4,16 @@ Este projeto é uma aplicação desktop desenvolvida com Electron, React, TypeSc
 
 # 🚀Tecnologias Utilizadas
 
-Vite - Para iniciar o projeto com `npm create @quick-start/electron@latest`
-Electron - Para criar a aplicação desktop
-TypeScript - Linguagem utilizada para garantir tipagem estática
-React - Biblioteca para construção da interface do usuário
-Express - Para criação da API backend
-SQLite3 - Banco de dados leve e embutido para armazenamento das informações
-Como Executar o Projeto
+- Vite - Para iniciar o projeto com `npm create @quick-start/electron@latest`
+- Electron - Para criar a aplicação desktop
+- TypeScript - Linguagem utilizada para garantir tipagem estática
+- React - Biblioteca para construção da interface do usuário
+- Express - Para criação da API backend
+- SQLite3 - Banco de dados leve e embutido para armazenamento das informações
 
 # 📋Pré-requisitos
 
+Como Executar o Projeto
 Certifique-se de ter as seguintes ferramentas instaladas:
 Node.js versão 14.x ou superior
 npm
