@@ -1,0 +1,62 @@
+@import '../../styles/variables.scss';
+
+
+.Container{
+  width: 100%;
+  height: 100vh;
+  border: 2px solid red;
+    img{
+    margin: 2rem;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .imgContainer{
+    margin: 0 auto;
+    width: 24rem;
+    height: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .ulContainer{
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    font-size: medium;
+    li{
+      padding: 0.25rem;
+      background-color: #c9c9c9;
+    }
+    .download{
+      color: $color-secondary;
+      font-weight: bold;
+    }
+    .methods{
+      color: rgb(24, 190, 51);
+      font-weight: bold;
+    }
+    .process{
+      color: white;
+      background-color: blue;
+      font-weight: bold;
+    }
+  }
+
+  .WelcomeContainer{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 2rem;
+    background-color: $color-primary;
+    color: $color-mediumGrey;
+    h1{
+      text-align: center;
+    }
+  }
+}

@@ -1,0 +1,24 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model Smartphone {
+  imagemDoSmartphone Bytes
+  model              String
+  nomeDoCelular      String @id @unique
+  processador        String
+  binarios           String
+  androids           String
+  downloadMode       String
+  factoryReset       String
+  unlockMethod       String
+  allowBinary        String
+  notAllowBinary     String
+  flashRom           String
+  program            String
+}
