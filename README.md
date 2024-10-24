@@ -20,15 +20,15 @@ npm
 
 # ⚙️Instalação
 
-Clone o repositório:
-bash
-Copiar código
-`git clone https://github.com/seu-usuario/seu-repositorio.git`
-`cd seu-repositorio`
-`Instale as dependências do projeto:`
-`bash`
-`Copiar código`
-`npm install`
+- Clone o repositório:
+- bash
+- Copiar código
+- git clone `https://github.com/seu-usuario/seu-repositorio.git`
+- cd seu-repositorio
+- Instale as dependências do projeto:
+- bash
+- Copiar código
+- `npm install`
 
 # Nota: Para instalar o SQLite3 corretamente, use o seguinte comando, pois houve problemas com o node-gyp na instalação padrão:
 
@@ -54,23 +54,22 @@ Isso criará um executável para a aplicação que incluirá o banco de dados SQ
 
 # 📂Estrutura do Projeto
 
-/src: Contém o código fonte da aplicação React.
-/electron: Contém os arquivos principais do Electron, como o processo principal.
-/public: Arquivos estáticos da aplicação.
-/backend: API criada com Express para interagir com o banco de dados SQLite.
+- /src/renderer: Contém o código fonte da aplicação React.
+- /src/main: Contém os arquivos principais do Electron, como o processo principal.
+- /dist: Arquivos estáticos da aplicação.
+- /src/main and /prisma: API criada com Express para interagir com o banco de dados SQLite.
 
 # 💾Banco de Dados SQLite
 
-O banco de dados utilizado é SQLite3, que é armazenado localmente na pasta userData da aplicação Electron no ambiente de produção. Para garantir a compatibilidade, utilizou-se a versão 5.1.6 do pacote sqlite3.
+O banco de dados utilizado é `SQLite3`, que é armazenado localmente na pasta userData da aplicação Electron no ambiente de produção. Para garantir a compatibilidade, utilizou-se a `versão 5.1.6` do pacote sqlite3.
 
-bash
-Copiar código
-`npm install -E sqlite3@5.1.6`
-Isso foi necessário devido a problemas encontrados com a instalação padrão via npm install sqlite3, que gerava erros relacionados ao node-gyp.
+- bash
+- Copiar código - `npm install -E sqlite3@5.1.6`
+- Isso foi necessário devido a problemas encontrados com a instalação padrão via npm install sqlite3, que gerava erros relacionados ao node-gyp.
 
 # ⚠️Problemas Conhecidos
 
-Problemas com a instalação padrão do sqlite3: Ao tentar instalar o pacote sem a versão fixa, ocorriam erros com o node-gyp. O uso da versão 5.1.6 resolve esse problema.
+Problemas com a instalação padrão do sqlite3: Ao tentar instalar o pacote sem a versão fixa, `ocorriam erros com o node-gyp`. O uso da versão `5.1.6` resolve esse problema.
 
 # 🤝Contribuições
 
